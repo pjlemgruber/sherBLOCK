@@ -1,0 +1,250 @@
+A Bill Of Materials (BOM) for the sherBLOCK can be found in the [GitHub page](https://github.com/pjlemgruber/sherBLOCK).
+
+For some great visuals and more extensive explanations, check out this [guide by Sparkfun](https://cdn.sparkfun.com/datasheets/Kits/SFE03-0012-SIK.Guide-300dpi-01.pdf) on getting started with Arduino boards and breadboard circuit assembly. 
+
+1. # **Arduino IDE**
+
+   1. ## Download the [Arduino IDE](http://arduino.cc/en/Main/Software)
+
+This is where you will paste the Arduino code. Once the code runs later on, the IDE will import the libraries and drivers needed and then upload the code to the Arduino Nano board. This code will then be stored in the Arduino Nano and will only need to be re-uploaded if you want to implement modifications.
+
+2. ## Connect the Arduino Nano to your computer
+
+Plug in the Arduino Nano board to your computer, open Arduino IDE and select the dropdown menu. This will require a cable that connects to your laptop ports and has a USB Mini B port to connect to the Arduino Nano. Then, click “select other board and port”, select the board “Arduino Nano” and then choose an available port. If you are having port issues when uploading the code, that means that the port you selected is not the one your board is connected to, so try the other ports as well.
+
+3. ## Open sketch and upload
+
+After downloading the Arduino sketch from the sherBLOCK GitHub page, select “file” in the Arduino IDE, then “open” and open the sketch you downloaded. This sketch should have everything you need to run the sherBLOCK. Now click on the right facing arrow on the teal bar to upload the code to the Arduino board. 
+
+If you experience any issues when attempting to upload the code to the Arduino, first try searching the exact problem you ran into. There is a lot of great troubleshooting advice out there and someone has likely already provided a solution to most common problems. If you cannot get through the uploading step, feel free to reach out to us on GitHub for support.
+
+2. # **Assemble the circuit**
+
+\* Disconnect the Arduino from any power supply before starting \*
+
+Before you start making connections on your breadboard, make sure you are familiar with the following:
+
+**The breadboard:**
+
+![][images/image1]
+
+## Key points:
+
+* Each 5-hole row (terminal strip) is internally connected by a metal strip.
+
+* The center divider splits the breadboard into two disconnected sides.
+
+* Each hole in a terminal strip can be referred to by a letter and number coordinate found on either side of the strips. These coordinates make assembly much easier.
+
+* Each power rail is internally connected along the length of the breadboard, but not to any of the other power rails.
+
+* The \+ and \- signs on the power rails are only labelling, but are still usually used for the corresponding \+ and \- connections.
+
+  * \+ and \- refer to the directions of the current in the circuit, where current flows from the \+ side of the power source (higher voltage) to the \- side (lower voltage). Therefore, the \+ rail is commonly used for connections from the power source to the components, and the \- rail is used for closing the circuit and connecting back to the power source.
+
+* Jumper cables can have different combinations of male and female ends. Here, M/M, F/M, F/F will be used to indicate the cable type needed for each connection.
+
+![][images/image2]
+
+## Important
+
+* **Never work on a circuit that is connected to a power supply (live circuit)\!** Always disconnect the power before adjusting individual components.
+
+* Make sure to not connect more than one pin of a component to a single interconnected strip. This will create a path of very little resistance that drastically increases the current flowing through it, producing heat and potentially breaking components (a *short circuit*). Relevant examples of connections to avoid are connecting the \+ rail with the \- rail, and connecting multiple pins of one component to the same terminal strip (row of holes).
+
+* Use the different colors and positions of the jumper wires to organize the board as you are assembling it. Avoid a jumble of wires by having them go around each other rather than under and over when possible.
+
+## Assembling the breadboard:
+
+![][images/image3]
+
+1. Place the Arduino Nano board with the outermost pins on the port side on C4 and G4 (the outermost pins on the other side of the board should be on C18 and G18). Press it down evenly to click into place.
+
+2. Adding resistors
+
+   1. Grab a 4.7K ohm resistor (has a yellow stripe) and bend its legs so that it forms a U shape. Now press the base of each leg against the resistor so that they are closer together while still parallel at the ends (you want them to be able to attach to neighboring holes). You may want to trim around 15mm from the ends of the legs so that the resistor sits closer to the board when you attach it, but **test** the resistor on any holes on the board before you trim to avoid over-trimming. Now attach one leg to C22 and the other to C21 (either orientation works).
+
+![][images/image4]
+
+2. Now grab a 100K ohm resistor (has an orange band). This resistor will attach to holes separated by two holes (will span four holes in total), so do as above but with a smaller deviation from that U shape. Trim the ends as before. Attach to H23 and H20.
+
+![][images/image5]
+
+3. For the last resistor, grab a 220 ohm resistor (has two red bands). This one will span five holes, so you can simply make that U shape and trim the ends. Attach to I23 and I19.
+
+![][images/image6]
+
+3. Building the common ground (-) rail:
+
+   1. Connect a short M/M jumper cable to the second column of the right side \- rail and to I15 (which should be in the same row/ terminal strip as the Arduino GND pin).
+
+   2. Connect another short M/M cable to E23 and the same \- rail column as the previous wire.
+
+   3. Connect another short M/M cable to the same \- rail column and J20
+
+   4. Connect a long M/M jumper cable to that same \- rail and leave the other end unattached
+
+![][images/image7]
+
+4. Building the 5V \+ rail:
+
+   1. On the same side of the board as the \- rail, connect a short M/M cable to the third column down on the \+ power rail. The other end connects to A15 (same terminal strip as the Arduino 5V).
+
+   2. Connect another short M/M jumper cable to that same \+ column and to E22.
+
+   3. Now connect a long M/M jumper cable to the \+ rail column and leave the other end disconnected.
+
+![][images/image8]
+
+5. Connecting to the arduino:
+
+   1. Connect a short M/M jumper cable to E21 and to I14 (same row as the arduino D2 pin).
+
+   2. Connect another short M/M cable to I11 (same row as the arduino D5 pin) and to J19.
+
+   3. Connect another short M/M cable to J23 and leave the other end unattached.
+
+![][images/image9]
+
+6. Connecting the OLED screen:
+
+   1. Before connecting jumper wires to the OLED, you will first need to solder the pins it comes with to its board. There are many short videos out there that do an excellent job at teaching beginners how to start soldering. One tip is to practice with jumper cables and resistors as you watch since you will likely have them in excess. This step can be more challenging than the rest of the assembly, so take your time with it and attempt it once you feel ready (you can return to this step later on). Avoid touching the screen with a hot soldering iron as it can ruin it. 
+
+   2. Please **check the pin names on the back of the board before soldering**. The pins you want are GND, VDD, SCL, and SDA. If there are two rows of pins to choose from, we recommend using the top center one. **Make sure that the black plastic strip for the pins is on the back of the screen’s board with the long side of the pins facing back**. This way, the short side of the pins should be going through the board with their ends sticking out front only a few millimeters; you will add the solder to these pin ends from the top side of the screen.
+
+![][images/image10]![][images/image11]
+
+3. Once the pins are secured to the OLED screen, grab four F/M long cables and attach the female end to the OLED pins. Connect the male ends from the SDA and SCL pins to A11 and A12 respectively. Connect the VDD cable to the [5V \+ rail](#bookmark=id.tx88c9hcitqa). Connect the GND cable to the [common ground (-) rail](#bookmark=id.uqb70n817epx).
+
+![][images/image12]
+
+7. Connecting the temperature sensor:
+
+   1. Now it’s time to get out the wire strippers for some practice. The Temperature sensor used in this build has a much longer wire than needed, so before cutting it to its desired length we suggest trying a few trimmings before. This will involve cutting a section of the external wire casing (black) without damaging the thin internal wire leads, then stripping the ends of the internal leads without damaging the internal strands. Most wire trimmers will not have a setting for larger gauges than 20 AWG, so you will need to use the trimmer’s blades or another sharp blade to make delicate cuts around the leads. 
+
+“Measure twice, cut once.”
+
+2. Once you feel confident about trimming the small leads, cut the sensor to around 280mm from end to end. 
+
+   3. Now, strip 15mm of the black insulating casing, then strip 5mm from the ends of each colored lead. Twist the strands of each lead to get rid of stray strands.
+
+   4. Insert the twisted lead strands into their respective connections on the adapter that comes with the temperature sensor. The black wire connects to GND, red to VCC, and yellow to DAT.
+
+![][images/image13]
+
+5. Connect the adapter’s pins to the breadboard. The GND pin connects to A23 (VCO and DAT should connect to A22 and A21 respectively).
+
+![][images/image14]
+
+## Assembling the remaining circuit:
+
+![][images/image15]
+
+\* Avoid leaving more than 2mm of exposed wire strands when making connections as exposed wires can lead to a short circuit.
+
+1. Cut two 30mm, two 60mm, and one 85mm pieces of 18 AWG wire. Strip around 8-10mm from each end and twist the ends tightly to prevent loose strands. 
+
+2. With the screws of a block terminal facing you, loosen all four screws to open space for the wires. You will insert the twisted strands on the sides between the two metal plates to make connections across the terminal block. 
+
+![][images/image16]
+
+3. Connect one end of each 60mm wire to each opening on one side of the terminal block. Tighten the screws on the right side and perform a tug test on each wire to check if they are firmly in place.
+
+![][images/image17]
+
+4. Now connect the other end of the top wire to the (-) connection on the female barrel jack adapter and tighten the screw to secure the wire. The bottom wire connects to the (+) connection. Tug test both wires to check if they are secure.
+
+5. Place the barrel jack adapter inside its 3d printed enclosure.
+
+![][images/image18]
+
+6. Before handling the MOSFET, ground yourself by touching a grounded metal object (such as a refrigerator or a washer) to prevent damaging it. Grab a 3 pin PCB terminal and bend the MOSFET legs slightly so that they slide into the 3 PCB connections. The MOSFET legs will share these pins with the following wires.
+
+![][images/image19]![][images/image20]
+
+7. With the black tab on the MOSFET facing you, connect the 85mm wire you previously prepared to the rightmost connection pin of the PCB terminal. Tighten the screw for that pin.
+
+8. Trim 2mm off of one of the heater’s wires and connect it to the middle connection on the PCB terminal. Tighten the screw for that pin.
+
+9. Connect the loose end of the jumper cable on J23 to the leftmost pin on the PCB terminal. Tighten the screw for that pin.
+
+![][images/image21]
+
+10. Perform a tug test on each wire to check that they are firmly in place.
+
+11. Loosen all four screws on the Buck Converter. Connect one end of the 30mm wires to each opening on the IN side. Tighten the screws and tug test.
+
+12. Connect the loose ends of the IN- wire from the Buck Converter and of the 85mm wire from the rightmost PCB pin to the top left opening of the terminal block. Tighten the screws and tug test.
+
+![][images/image22]
+
+13. Connect the loose ends of the IN+ wire from the Buck Converter and the other wire from the heater to the bottom left opening of the terminal block. Tighten the screws and tug test.
+
+![][images/image23]
+
+14. Finally, connect the loose ends of the \+ and \- power rails of the breadboard to the respective OUT+ and OUT- connections on the Buck Converter. Tighten the screws and tug test.
+
+![][images/image24]
+
+With that, your circuit should be complete. Before powering it on, we recommend briefly going through each connection again to ensure no shorts will occur. As you move forward, pay attention to any smoke/erratic behavior or heat buildup on the wires. If you spot anything unusual, turn everything off before inspecting or changing connections.
+
+First, power on the arduino directly through the USB Mini-B port; this should turn on all breadboard components (i.e. not the heater). If one/all do not turn on, start troubleshooting by rechecking your connections.
+
+If the components turn on, you can now unplug the Arduino and power the circuit directly through the barrel jack adapter. This should also turn on the heater, so be careful as it will get very hot in only a few seconds. 
+
+It is important that the breadboard is receiving 5V or less so that the arduino board does not overheat. To check the voltage coming out of the buck converter, click the top right button to show the voltage (if not on already). Then, press the left button to show the voltage on the OUT side of the converter. There are small red LEDs that will light up on the side the display is showing information for. The voltage for the IN side should be around 12V, and around 5V for the OUT side. If the voltage for the OUT side is much higher than 5V, unplug the sherBLOCK and disconnect one of the OUT+/- wires from the breadboard before proceeding. Then, using a screwdriver you can turn a small brass screw (potentiometer; found at the bottom of the buck converter) counterclockwise in order to decrease the voltage. If the voltage on both sides is now close to the desired levels when turned on, you can continue the assembly.
+
+Before proceeding with the assembly, turn everything off.
+
+# **Putting everything together**
+
+![][images/image25]
+
+Before you place the components inside the 3d-printed enclosure, prime each screw hole by fully screwing in its respective screw type. Different printers, materials, and brands produce different small deviations and imperfections that can make getting longer screws in much harder. It is better to prime the holes before you have more sensitive components inside.
+
+1. Grab four 12mm M3 non-conductive screws and four non-conductive M3 hex nuts. Place the buck converter on the support structures of the long wall of the enclosure base with the IN ports facing the other base wall. Secure it with the screws and make sure the nuts are not loose.   
+   1. Since bottom screws can be hard to reach, we recommend starting with the top screws. Once in place, hold  the hex nuts on the bottom screws with one finger and turn the screw rather than directly tightening the hex nut on the screw. 
+
+![][images/image26]
+
+2. Now grab four M5 screws and tighten the block terminal in place on the shorter base wall. You may need to push the terminal against the wall while tightening to prevent a large gap from forming (a small gap is fine). It may be easier to start with the bottom left screw and then tighten the top right screw to prevent the block from tilting.
+
+![][images/image27]
+
+3. Ensure that the large rectangular indent on the enclosure base is clean of debris and remove the protective layer of the tape on the underside of the breadboard. With the arduino port facing the short wall of the enclosure base, place the breadboard inside the indent pressing evenly to secure it in place (Check the orientation and positioning before since it can be hard to separate the breadboard after surface contact).
+
+![][images/image28]
+
+4. Now grab four more 12mm M3 screws (any material) and M3 hex nuts. Place the female barrel jack adapter and its enclosure on the 5-hole opening on the short base wall. The end of the adapter should be somewhat flush with the outside wall of the enclosure. Tighten the screws to secure it in place. As with the buck converter, it is easier to hold the nut in place and rotate the screws due to the surrounding parts.
+
+![][images/image29]
+
+5. Cut a square of the silicone sheet smaller than 40x40mm so that it fits inside the square shaped indent on the base of the enclosure.
+
+6. Grab the thinner blue portion of the heater wires and push it through the top opening next to the silicone sheet. Then, pull the thicker red/orange heater wire casing into the support structure. The heater should now be mostly centered on the silicone pad. Adjust as needed.   
+   1. Do not worry if the heater is not fully touching the silicone sheet. Once the heating block is added, the heater should be evenly pushed against the base.
+
+![][images/image30]
+
+7. Now, get four 10mm M3 non-conductive screws and four non-conductive M3 hex nuts. On the internal side of the top portion of the enclosure, place the oled screen with the flexible flat cable (FFC) facing the wall of the enclosure. Secure the screen with the screws as before.
+
+![][images/image31]
+
+8. Before securing the two halves of the enclosure, ensure that all wires are away from the heater and that the MOSFET is secured within the jumper cables and away from other metallic objects. Also quickly plug in the circuit to ensure that no connections got loose or shorted during the assembly. 
+
+![][images/image32]
+
+9. Get four 65mm M3 screws, two 45mm M3 screws, and six M3 hex nuts. Screw in both halves of the enclosure together. Make sure to avoid pinching any wires between the two parts of the enclosure.
+
+10. With the temperature sensor passing through the rectangular hole of the enclosure, sit the cable in the circular indent so that the heating block can slide in.
+
+11. Place the sensor inside one of the smaller holes in the heating block to maximize surface area contact and get more accurate measurements.
+
+![][images/image33]![][images/image34]
+
+Congratulations on assembling your sherBLOCK\! The sherBLOCK is now fully assembled and ready to use. 
+
+Whenever you desire, you may remove the arduino board from the breadboard to upload new code. We designed the sherBLOCK to minimize the number of parts that need to be removed during this process, so you only need to remove the heating block and open the enclosure once again (being careful with the wires connected to the OLED on the lid). You can then fit a small screwdriver into the breadboard center divider and gently pry the arduino board up. Just make sure to double check the positioning of the arduino once you are placing it back on the breadboard (useful tips are to take pictures of the circuit before you make any changes and to use a pen to mark where the arduino sits on the breadboard).
+
+We hope you enjoy your sherBLOCK experience\! Feel free to reach out to us on GitHub if you have any questions, suggestions, or concerns.
+
