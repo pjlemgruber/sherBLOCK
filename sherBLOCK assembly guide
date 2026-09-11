@@ -26,7 +26,7 @@ Before you start making connections on your breadboard, make sure you are famili
 
 **The breadboard:**
 
-![](images/image1.jpg)
+![breadboard example](images/image1.jpg)
 
 ## Key points:
 
@@ -44,7 +44,7 @@ Before you start making connections on your breadboard, make sure you are famili
 
 * Jumper cables can have different combinations of male and female ends. Here, M/M, F/M, F/F will be used to indicate the cable type needed for each connection.
 
-![][images/image2]
+![][images/image2.jpg]
 
 ## Important
 
@@ -56,7 +56,7 @@ Before you start making connections on your breadboard, make sure you are famili
 
 ## Assembling the breadboard:
 
-![][images/image3]
+![][images/image3.jpg]
 
 1. Place the Arduino Nano board with the outermost pins on the port side on C4 and G4 (the outermost pins on the other side of the board should be on C18 and G18). Press it down evenly to click into place.
 
@@ -64,15 +64,15 @@ Before you start making connections on your breadboard, make sure you are famili
 
    1. Grab a 4.7K ohm resistor (has a yellow stripe) and bend its legs so that it forms a U shape. Now press the base of each leg against the resistor so that they are closer together while still parallel at the ends (you want them to be able to attach to neighboring holes). You may want to trim around 15mm from the ends of the legs so that the resistor sits closer to the board when you attach it, but **test** the resistor on any holes on the board before you trim to avoid over-trimming. Now attach one leg to C22 and the other to C21 (either orientation works).
 
-![][images/image4]
+![][images/image4.jpg]
 
 2. Now grab a 100K ohm resistor (has an orange band). This resistor will attach to holes separated by two holes (will span four holes in total), so do as above but with a smaller deviation from that U shape. Trim the ends as before. Attach to H23 and H20.
 
-![][images/image5]
+![][images/image5.jpg]
 
 3. For the last resistor, grab a 220 ohm resistor (has two red bands). This one will span five holes, so you can simply make that U shape and trim the ends. Attach to I23 and I19.
 
-![][images/image6]
+![][images/image6.jpg]
 
 3. Building the common ground (-) rail:
 
@@ -84,7 +84,7 @@ Before you start making connections on your breadboard, make sure you are famili
 
    4. Connect a long M/M jumper cable to that same \- rail and leave the other end unattached
 
-![][images/image7]
+![][images/image7.jpg]
 
 4. Building the 5V \+ rail:
 
@@ -94,7 +94,7 @@ Before you start making connections on your breadboard, make sure you are famili
 
    3. Now connect a long M/M jumper cable to the \+ rail column and leave the other end disconnected.
 
-![][images/image8]
+![][images/image8.jpg]
 
 5. Connecting to the arduino:
 
@@ -104,7 +104,7 @@ Before you start making connections on your breadboard, make sure you are famili
 
    3. Connect another short M/M cable to J23 and leave the other end unattached.
 
-![][images/image9]
+![][images/image9.jpg]
 
 6. Connecting the OLED screen:
 
@@ -112,11 +112,11 @@ Before you start making connections on your breadboard, make sure you are famili
 
    2. Please **check the pin names on the back of the board before soldering**. The pins you want are GND, VDD, SCL, and SDA. If there are two rows of pins to choose from, we recommend using the top center one. **Make sure that the black plastic strip for the pins is on the back of the screen’s board with the long side of the pins facing back**. This way, the short side of the pins should be going through the board with their ends sticking out front only a few millimeters; you will add the solder to these pin ends from the top side of the screen.
 
-![][images/image10]![][images/image11]
+![][images/image10.jpg]![][images/image11.jpg]
 
 3. Once the pins are secured to the OLED screen, grab four F/M long cables and attach the female end to the OLED pins. Connect the male ends from the SDA and SCL pins to A11 and A12 respectively. Connect the VDD cable to the [5V \+ rail](#bookmark=id.tx88c9hcitqa). Connect the GND cable to the [common ground (-) rail](#bookmark=id.uqb70n817epx).
 
-![][images/image12]
+![][images/image12.jpg]
 
 7. Connecting the temperature sensor:
 
@@ -130,15 +130,15 @@ Before you start making connections on your breadboard, make sure you are famili
 
    4. Insert the twisted lead strands into their respective connections on the adapter that comes with the temperature sensor. The black wire connects to GND, red to VCC, and yellow to DAT.
 
-![][images/image13]
+![][images/image13.jpg]
 
 5. Connect the adapter’s pins to the breadboard. The GND pin connects to A23 (VCO and DAT should connect to A22 and A21 respectively).
 
-![][images/image14]
+![][images/image14.jpg]
 
 ## Assembling the remaining circuit:
 
-![][images/image15]
+![][images/image15.jpg]
 
 \* Avoid leaving more than 2mm of exposed wire strands when making connections as exposed wires can lead to a short circuit.
 
@@ -146,21 +146,21 @@ Before you start making connections on your breadboard, make sure you are famili
 
 2. With the screws of a block terminal facing you, loosen all four screws to open space for the wires. You will insert the twisted strands on the sides between the two metal plates to make connections across the terminal block. 
 
-![][images/image16]
+![][images/image16.jpg]
 
 3. Connect one end of each 60mm wire to each opening on one side of the terminal block. Tighten the screws on the right side and perform a tug test on each wire to check if they are firmly in place.
 
-![][images/image17]
+![][images/image17.jpg]
 
 4. Now connect the other end of the top wire to the (-) connection on the female barrel jack adapter and tighten the screw to secure the wire. The bottom wire connects to the (+) connection. Tug test both wires to check if they are secure.
 
 5. Place the barrel jack adapter inside its 3d printed enclosure.
 
-![][images/image18]
+![][images/image18.jpg]
 
 6. Before handling the MOSFET, ground yourself by touching a grounded metal object (such as a refrigerator or a washer) to prevent damaging it. Grab a 3 pin PCB terminal and bend the MOSFET legs slightly so that they slide into the 3 PCB connections. The MOSFET legs will share these pins with the following wires.
 
-![][images/image19]![][images/image20]
+![][images/image19.jpg]![][images/image20.jpg]
 
 7. With the black tab on the MOSFET facing you, connect the 85mm wire you previously prepared to the rightmost connection pin of the PCB terminal. Tighten the screw for that pin.
 
@@ -168,7 +168,7 @@ Before you start making connections on your breadboard, make sure you are famili
 
 9. Connect the loose end of the jumper cable on J23 to the leftmost pin on the PCB terminal. Tighten the screw for that pin.
 
-![][images/image21]
+![][images/image21.jpg]
 
 10. Perform a tug test on each wire to check that they are firmly in place.
 
@@ -176,15 +176,15 @@ Before you start making connections on your breadboard, make sure you are famili
 
 12. Connect the loose ends of the IN- wire from the Buck Converter and of the 85mm wire from the rightmost PCB pin to the top left opening of the terminal block. Tighten the screws and tug test.
 
-![][images/image22]
+![][images/image22.jpg]
 
 13. Connect the loose ends of the IN+ wire from the Buck Converter and the other wire from the heater to the bottom left opening of the terminal block. Tighten the screws and tug test.
 
-![][images/image23]
+![][images/image23.jpg]
 
 14. Finally, connect the loose ends of the \+ and \- power rails of the breadboard to the respective OUT+ and OUT- connections on the Buck Converter. Tighten the screws and tug test.
 
-![][images/image24]
+![][images/image24.jpg]
 
 With that, your circuit should be complete. Before powering it on, we recommend briefly going through each connection again to ensure no shorts will occur. As you move forward, pay attention to any smoke/erratic behavior or heat buildup on the wires. If you spot anything unusual, turn everything off before inspecting or changing connections.
 
@@ -198,41 +198,41 @@ Before proceeding with the assembly, turn everything off.
 
 # **Putting everything together**
 
-![][images/image25]
+![][images/image25.jpg]
 
 Before you place the components inside the 3d-printed enclosure, prime each screw hole by fully screwing in its respective screw type. Different printers, materials, and brands produce different small deviations and imperfections that can make getting longer screws in much harder. It is better to prime the holes before you have more sensitive components inside.
 
 1. Grab four 12mm M3 non-conductive screws and four non-conductive M3 hex nuts. Place the buck converter on the support structures of the long wall of the enclosure base with the IN ports facing the other base wall. Secure it with the screws and make sure the nuts are not loose.   
    1. Since bottom screws can be hard to reach, we recommend starting with the top screws. Once in place, hold  the hex nuts on the bottom screws with one finger and turn the screw rather than directly tightening the hex nut on the screw. 
 
-![][images/image26]
+![][images/image26.jpg]
 
 2. Now grab four M5 screws and tighten the block terminal in place on the shorter base wall. You may need to push the terminal against the wall while tightening to prevent a large gap from forming (a small gap is fine). It may be easier to start with the bottom left screw and then tighten the top right screw to prevent the block from tilting.
 
-![][images/image27]
+![][images/image27.jpg]
 
 3. Ensure that the large rectangular indent on the enclosure base is clean of debris and remove the protective layer of the tape on the underside of the breadboard. With the arduino port facing the short wall of the enclosure base, place the breadboard inside the indent pressing evenly to secure it in place (Check the orientation and positioning before since it can be hard to separate the breadboard after surface contact).
 
-![][images/image28]
+![][images/image28.jpg]
 
 4. Now grab four more 12mm M3 screws (any material) and M3 hex nuts. Place the female barrel jack adapter and its enclosure on the 5-hole opening on the short base wall. The end of the adapter should be somewhat flush with the outside wall of the enclosure. Tighten the screws to secure it in place. As with the buck converter, it is easier to hold the nut in place and rotate the screws due to the surrounding parts.
 
-![][images/image29]
+![][images/image29.jpg]
 
 5. Cut a square of the silicone sheet smaller than 40x40mm so that it fits inside the square shaped indent on the base of the enclosure.
 
 6. Grab the thinner blue portion of the heater wires and push it through the top opening next to the silicone sheet. Then, pull the thicker red/orange heater wire casing into the support structure. The heater should now be mostly centered on the silicone pad. Adjust as needed.   
    1. Do not worry if the heater is not fully touching the silicone sheet. Once the heating block is added, the heater should be evenly pushed against the base.
 
-![][images/image30]
+![][images/image30.jpg]
 
 7. Now, get four 10mm M3 non-conductive screws and four non-conductive M3 hex nuts. On the internal side of the top portion of the enclosure, place the oled screen with the flexible flat cable (FFC) facing the wall of the enclosure. Secure the screen with the screws as before.
 
-![][images/image31]
+![][images/image31.jpg]
 
 8. Before securing the two halves of the enclosure, ensure that all wires are away from the heater and that the MOSFET is secured within the jumper cables and away from other metallic objects. Also quickly plug in the circuit to ensure that no connections got loose or shorted during the assembly. 
 
-![][images/image32]
+![][images/image32.jpg]
 
 9. Get four 65mm M3 screws, two 45mm M3 screws, and six M3 hex nuts. Screw in both halves of the enclosure together. Make sure to avoid pinching any wires between the two parts of the enclosure.
 
@@ -240,7 +240,7 @@ Before you place the components inside the 3d-printed enclosure, prime each scre
 
 11. Place the sensor inside one of the smaller holes in the heating block to maximize surface area contact and get more accurate measurements.
 
-![][images/image33]![][images/image34]
+![][images/image33.jpg]![][images/image34.jpg]
 
 Congratulations on assembling your sherBLOCK\! The sherBLOCK is now fully assembled and ready to use. 
 
