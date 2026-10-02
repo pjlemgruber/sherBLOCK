@@ -1,4 +1,7 @@
 # sherBLOCK
+
+<img width="127" height="64" alt="ezgif com-resize" src="https://github.com/user-attachments/assets/94ec8029-ea50-404d-ada0-652602d1c345" />
+
 The sherBLOCK is a portable DIY isothermal heater designed for tube incubation in the field. It operates at 12V with a maximum power consumption of 24W, meaning it can be powered by a barrel jack wall adapter or a cigarette lighter car plug. The sherBLOCK is controlled by an Arduino Nano microcontroller, which can be programmed for user-specific modifications that best fit your project's needs. 
 
 The sherBLOCK can be assembled to fit a variety of tube sizes (0.2, 0.5, 1.5, 5, and 15mL tubes). Other components, such as heaters, can also be replaced to meet your demands as long as they fit the sizing specifications of the enclosure. Components that deviate in sizing may require adjustments to the 3D printing files.
