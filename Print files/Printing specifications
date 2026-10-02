@@ -1,0 +1,5 @@
+We recommend printing the sherBLOCK using high-quality ASA filament. Several free slicers are available online to process the files for printing. 
+
+Within the slicer, make sure to immport all parts of the enclosure and move them within the printable area. Then, rotate the base and lid of the sherBLOCK so that the bottom and top are facing down respectively; this is to ensure that the fine details where the two parts meet will be printed in the same axis. 
+
+When adjusting the slicer print settings, we suggest setting the infill to 15% with gyroid fill, wall settings to 3 to 4 wall layers, and supports to tree support at overhangs.
