@@ -12,4 +12,4 @@ The sherBLOCK can be assembled to fit a variety of tube sizes (0.2, 0.5, 1.5, 5,
 
 We welcome you to make modifications to the sherBLOCK and share them here so others can access them. 
 
-Please keep in mind that by choosing to use or engage with the materials of this project, you agree with doing so at your own risk. The sherBLOCK includes heaters and sensitive electronics, making it a potential fire hazard. Please exercise caution when engaging with the materials provided here and use them responsibly. We are not responsible for the use or misuse of the information provided in this project.
+This project is held under the GNU General Public Licence v3.0. Please keep in mind that by choosing to use or engage with the materials of this project, you are doing so at your own risk. The sherBLOCK includes heaters and sensitive electronics, making it a potential fire hazard. Please exercise caution when engaging with the materials provided here and use them responsibly. 
