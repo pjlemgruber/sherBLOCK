@@ -1,4 +1,4 @@
-# sherBLOCK: a portable, DIY isothermal incubator for on-the-go scientific applications.
+# sherBLOCK: a portable, DIY isothermal incubator.
 
 <p align="center">
 <img width="635" height="320" alt="sherBLOCK_5x" src="https://github.com/user-attachments/assets/30881fb8-7763-4c0f-a63b-72c7404489b2" />
