@@ -101,6 +101,6 @@ We welcome you to make modifications to the sherBLOCK and share them here so oth
 This project is held under the GNU General Public Licence v3.0. Please keep in mind that by choosing to use or engage with the materials of this project, you are doing so at your own risk. The sherBLOCK includes heaters and sensitive electronics, making it a potential fire hazard. Please exercise caution when engaging with the materials provided here and use them responsibly. 
 
 View the 3D models:
-[enclosure base](<Print files/sherBLOCK_10A_v1.5-Base Base body.stl>),
-[lid](<Print files/sherBLOCK_10A_v1.5-Fused lidFused lid body.stl>), and
-[power adapter](<Print files/sherBLOCK_10A_v1.5-10A adapter enclosureadapter enclosure body.stl>).
+[enclosure base](<Print files/sherBLOCK+/sherBLOCK+_v1.5-base.stl>),
+[lid](<Print files/sherBLOCK+/sherBLOCK+_v1.5-lid.stl>), and
+[power adapter](<Print files/sherBLOCK+/sherBLOCK+_v1.5-adapter.stl>).
