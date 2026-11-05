@@ -1,14 +1,22 @@
-We recommend printing the sherBLOCK using high-quality ASA filament. Several free slicers are available online to process the files for printing. 
+We recommend printing the sherBLOCK+ using high-quality 1.75mm ASA filament. Not all printers are ASA-compatible, as ASA requires higher temperatures as well as an enclosed environment; familiarize yourself with how to print using ASA for your specific printer model. 
 
-Within the slicer, make sure to immport all parts of the enclosure and move them within the printable area. Then, rotate the lid of the sherBLOCK so that the bottom is facing up; this is to ensure that the fine details where the two parts meet will be printed in the same axis. 
+We provide both .stl, .FCStd, and .step files for the sherBLOCK models. Files saved as .stl must be uploaded to a slicer before printing. The slicer is where you will adjust the settings of the print to match your specific printer model and desired parameters, and download a print-ready file. Several free slicers are available online to process the files for printing. When selecting a slicer to use/download, ensure that the slicer is compatible with your printer. If you are sending the files for someone else to print for you, this is the right file type to send along our suggested printer setting adjustments below. 
 
-Adjusting the slicer print settings:
+The .FCStd file can be used for a full control of the 3D model's dimensions and features. This file type is only compatible with the [FreeCad software](https://www.freecad.org), which can be downloaded for free with no sign up, and it contains all of the information needed to modify the sherBLOCK. Files saved as .step are compatible with most CAD software, but are limited to how much they can be modified.
+
+When you are ready to print, open your slicer of choice and upload all of the sherBLOCK parts for your desired model. Given that you select the correct printer model, all of the settings you adjust within the slicer will be imported with you final file to your printer (including the position of the parts within the printing bed). Within the slicer, move each individual part within the printable area in a conformation that keeps parts close without them touching (many slicers will also have an option to automatically arrange parts). Then, rotate the lid of the sherBLOCK so that the bottom is facing up; this is to ensure that the fine details where the two parts meet will be printed in the same axis. This is an example of a print configuration that you can use:
+
+
+
+Suggested adjustments to default ASA slicer print settings:
 * Wall loops: 5 
 * Top and bottom shell layers: 4
 * Top and bottom shell thickness: 0.8mm
 * Infill pattern: gyroid
 * infill density: 15% 
-* Pattern: gyroid 
 * Initial layer speed: 35 mm/s
+* Initial layer infill speed: 80 mm/s
 * Support: Tree (organic)
+* Skirt loops: 1
 * Outer brim: 6mm
+* All vent settings: off / vent speed 0% (exept for overhang cooling [on] with default settings)
