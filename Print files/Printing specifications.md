@@ -7,7 +7,7 @@ The .FCStd file can be used for a full control of the 3D model's dimensions and 
 When you are ready to print, open your slicer of choice and upload all of the sherBLOCK parts for your desired model. Given you selected the correct printer model, all of the settings you adjust within the slicer will be imported with your final .3mf file to your printer (including the position of the parts within the printing bed). In the slicer app, move each individual part within the printable area in a conformation that keeps parts close without them touching (many slicers will also have an option to automatically arrange parts). Then, rotate the lid of the sherBLOCK so that it rests on its side wall; this is to minimize the amount of supports needed to print and improve the quality of the final product. This is an example of a print configuration that you can use:
 
 <p align = center>
-<img width="512" height="414" alt="Image" src="https://github.com/user-attachments/assets/c7d64790-269c-448e-8d38-1009d8dda8bb" />
+  <img width="512" height="370" alt="sherBLOCK_printingExample" src="https://github.com/user-attachments/assets/b226fff9-b2a5-4dc3-9fb3-4ac8b7b1d39b" />
 </p>
 
 Suggested adjustments to the default slicer print settings for ASA:
